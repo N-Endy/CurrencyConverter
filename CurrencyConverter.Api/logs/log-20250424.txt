@@ -638,3 +638,21 @@ System.IO.IOException: Failed to bind to address http://127.0.0.1:5000: address 
 2025-04-24 14:14:33 [INF] Request get:/api/v1.0/currency/convert from IP ::1 has been blocked, quota 60/1m exceeded by 2. Blocked by rule *, TraceIdentifier 0HNC365V56J9C:0000006D. MonitorMode: False
 2025-04-24 14:14:33 [INF] Request get:/api/v1.0/currency/convert from IP ::1 has been blocked, quota 60/1m exceeded by 3. Blocked by rule *, TraceIdentifier 0HNC365V56J9C:0000006E. MonitorMode: False
 2025-04-24 14:14:33 [INF] Request get:/api/v1.0/currency/convert from IP ::1 has been blocked, quota 60/1m exceeded by 4. Blocked by rule *, TraceIdentifier 0HNC365V56J9C:0000006F. MonitorMode: False
+2025-04-24 16:30:57 [INF] Fetching real-time exchange rates...
+2025-04-24 16:30:57 [INF] Real-time rates fetched for USD
+2025-04-24 16:30:58 [INF] Real-time rates stored for USD
+2025-04-24 16:30:58 [INF] Fetching historical exchange rates...
+2025-04-24 16:30:58 [INF] Historical rates fetched from 2024-04-24 to 2025-04-24 for USD to GBP
+2025-04-24 16:30:58 [INF] Historical rates fetched from 2024-04-24 to 2025-04-24 for USD to EUR
+2025-04-24 16:30:58 [INF] Historical rates fetched from 2024-04-24 to 2025-04-24 for GBP to EUR
+2025-04-24 16:30:58 [INF] Historical exchange rates saved.
+2025-04-24 16:30:59 [WRN] Overriding address(es) 'http://localhost:5000'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2025-04-24 16:54:36 [INF] Fetching real-time exchange rates...
+2025-04-24 16:54:36 [INF] Real-time rates fetched for USD
+2025-04-24 16:54:37 [INF] Real-time rates stored for USD
+2025-04-24 16:54:37 [INF] Fetching historical exchange rates...
+2025-04-24 16:54:37 [INF] Historical rates fetched from 2024-04-24 to 2025-04-24 for USD to GBP
+2025-04-24 16:54:37 [INF] Historical rates fetched from 2024-04-24 to 2025-04-24 for USD to EUR
+2025-04-24 16:54:37 [INF] Historical rates fetched from 2024-04-24 to 2025-04-24 for GBP to EUR
+2025-04-24 16:54:37 [INF] Historical exchange rates saved.
+2025-04-24 16:54:38 [WRN] Overriding address(es) 'http://localhost:5000'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.

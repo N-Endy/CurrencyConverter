@@ -1,7 +1,10 @@
+using System.Text.Json;
+using System.Text.Json.Serialization;
 using Asp.Versioning;
 using AspNetCoreRateLimit;
 using CurrencyConverter.Api.BackgroundJob;
 using CurrencyConverter.Api.Middlewares;
+using CurrencyConverter.Api.Utils;
 using CurrencyConverter.Application.CurrencyService.Interface;
 using CurrencyConverter.Application.CurrencyService.Service;
 using CurrencyConverter.Application.ExternalService.Interface;
@@ -18,7 +21,13 @@ using Serilog;
 
 WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddControllers();
+builder.Services.AddControllers()
+    .AddJsonOptions(options =>
+    {
+        options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter());
+        options.JsonSerializerOptions.Converters.Add(new DateTimeConverter("dd-MM-yyyy"));
+        options.JsonSerializerOptions.PropertyNamingPolicy = JsonNamingPolicy.CamelCase;
+    });
 
 builder.Services.AddOpenApi();
 
@@ -50,6 +59,7 @@ builder.Services.AddHttpClient("ExternalService")
 builder.Services.AddScoped<IExternalCurrencyService, ExchangeRateService>();
 builder.Services.AddScoped<SimulatedCurrencyService>();
 builder.Services.AddScoped<ICurrencyService, CurrencyService>();
+builder.Services.AddScoped<IHistoricalService, HistoricalService>();
 builder.Services.AddScoped<ICurrencyRepository, CurrencyRepository>();
 
 

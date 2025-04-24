@@ -98,22 +98,35 @@ This creates currencyconverter.db in the CurrencyConverter.Api directory.
 
 ## API Endpoints
 
-| Method | Endpoint                                      | Description                                      | Request Body                              | Query Parameters                  | Response Example                                                                 |
-|--------|-----------------------------------------------|--------------------------------------------------|-------------------------------------------|-----------------------------------|----------------------------------------------------------------------------------|
-| GET    | `/api/v1/Currency/convert`                   | Converts an amount between currencies using the latest rate. | `CurrencyConversionRequest` (JSON)        | None                              | `{"fromCurrency":"USD","toCurrency":"GBP","amount":100,"convertedAmount":80,"rate":0.80,"conversionDate":"2025-04-24T12:00:00Z"}` |
-| GET    | `/api/v1/Currency/historical-rates`          | Retrieves historical rates for a date range.     | `CurrencyConversionRequest` (JSON)        | `startDate`, `endDate`            | `[{"conversionDate":"2025-04-01T00:00:00Z","rate":0.79}]`                        |
-| GET    | `/api/v1/Currency/convert/historical`        | Converts an amount using a historical rate.      | `CurrencyConversionRequest` (JSON)        | None                              | `{"fromCurrency":"USD","toCurrency":"GBP","amount":100,"convertedAmount":79,"rate":0.79,"conversionDate":"2025-04-01T00:00:00Z"}` |
+All endpoints are versioned under `/api/v1/Currency` and use `POST` methods to accept JSON request bodies. The `CurrencyController` provides the following endpoints:
+
+| Method | Endpoint Link                                                                    | Description                                      | Request                                                                                                                                                                                                      | Response Example                                                                 |
+|--------|----------------------------------------------------------------------------------|--------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------|
+| POST   | [`/api/v1/Currency/convert`](#)                                                  | Converts an amount between currencies using the latest rate. | ```json<br>{<br>  "fromCurrency": "USD",<br>  "toCurrency": "GBP",<br>  "amount": 100<br>}<br>```                                                                                                            | ```json<br>{<br>  "fromCurrency": "USD",<br>  "toCurrency": "GBP",<br>  "amount": 100,<br>  "convertedAmount": 80,<br>  "rate": 0.80,<br>  "conversionDate": "24-04-2025"<br>}<br>``` |
+| POST   | [`/api/v1/Currency/historical-rates?startDate=2025-04-01&endDate=2025-04-24`](#) | Retrieves historical rates for a date range.     | ```json<br>{<br>  "fromCurrency": "USD",<br>  "toCurrency": "GBP",<br>  "amount": 100<br>}<br>```<br>**Query Parameters**:<br>`startDate`: Date (e.g., `2025-04-01`)<br>`endDate`: Date (e.g., `2025-04-24`) | ```json<br>[<br>  {<br>    "conversionDate": "01-04-2025",<br>    "rate": 0.79<br>  }<br>]<br>``` |
+| POST   | [`/api/v1/Currency/convert/historical`](#)                                       | Converts an amount using a historical rate.      | ```json<br>{<br>  "fromCurrency": "USD",<br>  "toCurrency": "GBP",<br>  "amount": 100,<br>  "conversionDate": "2025-04-01"<br>}<br>```                                                                       | ```json<br>{<br>  "fromCurrency": "USD",<br>  "toCurrency": "GBP",<br>  "amount": 100,<br>  "convertedAmount": 79,<br>  "rate": 0.79,<br>  "conversionDate": "01-04-2025"<br>}<br>``` |
+
+### Notes
+- **Request Body**: All endpoints require a `CurrencyConversionRequest` JSON object with `fromCurrency`, `toCurrency`, and `amount`. The `convert/historical` endpoint also requires `conversionDate`.
+- **Query Parameters**: The `historical-rates` endpoint requires `startDate` and `endDate` in ISO 8601 format (e.g., `2025-04-01`). Invalid formats return a 400 error.
+- **Response Format**: Dates in responses (e.g., `conversionDate`) are formatted as `dd-MM-yyyy` (e.g., `24-04-2025`).
+- **Rate-Limiting**:
+  - Global limit: 60 requests per minute.
+  - `/api/v1/Currency/convert`: 30 requests per minute.
+  - Exceeding limits returns a 429 response.
 
 ### Error Responses
-- Errors are handled by the GlobalExceptionHandler
-  ```json
-  {
+
+Errors are handled by the global exception handler and return JSON:
+
+```json
+{
   "statusCode": 400,
   "errorCode": "VALIDATION_ERROR",
-  "message": "Amount must be positive.",
+  "message": "FromCurrency and ToCurrency are required.",
   "timestamp": "2025-04-24T12:00:00Z"
-  }
-  ```
+}
+```
 - Common error codes:
     * 400: Validation errors
     * 404: Not found (e.g., currency not supported)
