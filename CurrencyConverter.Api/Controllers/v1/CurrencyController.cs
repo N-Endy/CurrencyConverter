@@ -19,7 +19,7 @@ public class CurrencyController : ControllerBase
         CurrencyService = currencyService;
     }
     
-    [HttpGet("convert")]
+    [HttpPost("convert")]
     public async Task<IActionResult> ConvertCurrency([FromBody] CurrencyConversionRequest request)
     {
         try
@@ -33,7 +33,7 @@ public class CurrencyController : ControllerBase
         }
     }
     
-    [HttpGet("historical-rates")]
+    [HttpPost("historical-rates")]
     public async Task<IActionResult> GetHistoricalRates([FromBody] CurrencyConversionRequest request, [FromQuery] DateTime startDate, [FromQuery] DateTime endDate)
     {
         try
@@ -47,7 +47,7 @@ public class CurrencyController : ControllerBase
         }
     }
     
-    [HttpGet("convert/historical")]
+    [HttpPost("convert/historical")]
     public async Task<IActionResult> HistoricalConvert([FromBody] CurrencyConversionRequest request)
     {
         try
