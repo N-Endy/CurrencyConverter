@@ -1,0 +1,29 @@
+{
+  "version": 2,
+  "dgSpecHash": "Lo3yvdPuzJI=",
+  "success": true,
+  "projectFilePath": "/Users/MAC/Desktop/Personal/CurrencyConverter1/CurrencyConverter.Application/CurrencyConverter.Application.csproj",
+  "expectedPackageFiles": [
+    "/Users/MAC/.nuget/packages/fluentvalidation/11.5.1/fluentvalidation.11.5.1.nupkg.sha512",
+    "/Users/MAC/.nuget/packages/fluentvalidation.aspnetcore/11.3.0/fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
+    "/Users/MAC/.nuget/packages/fluentvalidation.dependencyinjectionextensions/11.5.1/fluentvalidation.dependencyinjectionextensions.11.5.1.nupkg.sha512",
+    "/Users/MAC/.nuget/packages/microsoft.entityframeworkcore/9.0.4/microsoft.entityframeworkcore.9.0.4.nupkg.sha512",
+    "/Users/MAC/.nuget/packages/microsoft.entityframeworkcore.abstractions/9.0.4/microsoft.entityframeworkcore.abstractions.9.0.4.nupkg.sha512",
+    "/Users/MAC/.nuget/packages/microsoft.entityframeworkcore.analyzers/9.0.4/microsoft.entityframeworkcore.analyzers.9.0.4.nupkg.sha512",
+    "/Users/MAC/.nuget/packages/microsoft.entityframeworkcore.relational/9.0.4/microsoft.entityframeworkcore.relational.9.0.4.nupkg.sha512",
+    "/Users/MAC/.nuget/packages/microsoft.extensions.caching.abstractions/9.0.4/microsoft.extensions.caching.abstractions.9.0.4.nupkg.sha512",
+    "/Users/MAC/.nuget/packages/microsoft.extensions.caching.memory/9.0.4/microsoft.extensions.caching.memory.9.0.4.nupkg.sha512",
+    "/Users/MAC/.nuget/packages/microsoft.extensions.configuration.abstractions/9.0.4/microsoft.extensions.configuration.abstractions.9.0.4.nupkg.sha512",
+    "/Users/MAC/.nuget/packages/microsoft.extensions.dependencyinjection/9.0.4/microsoft.extensions.dependencyinjection.9.0.4.nupkg.sha512",
+    "/Users/MAC/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/9.0.4/microsoft.extensions.dependencyinjection.abstractions.9.0.4.nupkg.sha512",
+    "/Users/MAC/.nuget/packages/microsoft.extensions.logging/9.0.4/microsoft.extensions.logging.9.0.4.nupkg.sha512",
+    "/Users/MAC/.nuget/packages/microsoft.extensions.logging.abstractions/9.0.4/microsoft.extensions.logging.abstractions.9.0.4.nupkg.sha512",
+    "/Users/MAC/.nuget/packages/microsoft.extensions.options/9.0.4/microsoft.extensions.options.9.0.4.nupkg.sha512",
+    "/Users/MAC/.nuget/packages/microsoft.extensions.primitives/9.0.4/microsoft.extensions.primitives.9.0.4.nupkg.sha512",
+    "/Users/MAC/.nuget/packages/polly/8.5.2/polly.8.5.2.nupkg.sha512",
+    "/Users/MAC/.nuget/packages/polly.core/8.5.2/polly.core.8.5.2.nupkg.sha512",
+    "/Users/MAC/.nuget/packages/serilog/4.2.1-dev-02352/serilog.4.2.1-dev-02352.nupkg.sha512",
+    "/Users/MAC/.nuget/packages/sonaranalyzer.csharp/10.8.0.113526/sonaranalyzer.csharp.10.8.0.113526.nupkg.sha512"
+  ],
+  "logs": []
+}

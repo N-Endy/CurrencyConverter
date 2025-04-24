@@ -1,0 +1,16 @@
+/Users/MAC/Desktop/Personal/CurrencyConverter/CurrencyConverter.Infrastructure/bin/Debug/net9.0/CurrencyConverter.Infrastructure.deps.json
+/Users/MAC/Desktop/Personal/CurrencyConverter/CurrencyConverter.Infrastructure/bin/Debug/net9.0/CurrencyConverter.Infrastructure.dll
+/Users/MAC/Desktop/Personal/CurrencyConverter/CurrencyConverter.Infrastructure/bin/Debug/net9.0/CurrencyConverter.Infrastructure.pdb
+/Users/MAC/Desktop/Personal/CurrencyConverter/CurrencyConverter.Infrastructure/bin/Debug/net9.0/CurrencyConverter.Domain.dll
+/Users/MAC/Desktop/Personal/CurrencyConverter/CurrencyConverter.Infrastructure/bin/Debug/net9.0/CurrencyConverter.Domain.pdb
+/Users/MAC/Desktop/Personal/CurrencyConverter/CurrencyConverter.Infrastructure/obj/Debug/net9.0/CurrencyConverter.Infrastructure.csproj.AssemblyReference.cache
+/Users/MAC/Desktop/Personal/CurrencyConverter/CurrencyConverter.Infrastructure/obj/Debug/net9.0/CurrencyConverter.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/Users/MAC/Desktop/Personal/CurrencyConverter/CurrencyConverter.Infrastructure/obj/Debug/net9.0/CurrencyConverter.Infrastructure.AssemblyInfoInputs.cache
+/Users/MAC/Desktop/Personal/CurrencyConverter/CurrencyConverter.Infrastructure/obj/Debug/net9.0/CurrencyConverter.Infrastructure.AssemblyInfo.cs
+/Users/MAC/Desktop/Personal/CurrencyConverter/CurrencyConverter.Infrastructure/obj/Debug/net9.0/CurrencyConverter.Infrastructure.csproj.CoreCompileInputs.cache
+/Users/MAC/Desktop/Personal/CurrencyConverter/CurrencyConverter.Infrastructure/obj/Debug/net9.0/Currency.152E3FAF.Up2Date
+/Users/MAC/Desktop/Personal/CurrencyConverter/CurrencyConverter.Infrastructure/obj/Debug/net9.0/CurrencyConverter.Infrastructure.dll
+/Users/MAC/Desktop/Personal/CurrencyConverter/CurrencyConverter.Infrastructure/obj/Debug/net9.0/refint/CurrencyConverter.Infrastructure.dll
+/Users/MAC/Desktop/Personal/CurrencyConverter/CurrencyConverter.Infrastructure/obj/Debug/net9.0/CurrencyConverter.Infrastructure.pdb
+/Users/MAC/Desktop/Personal/CurrencyConverter/CurrencyConverter.Infrastructure/obj/Debug/net9.0/ref/CurrencyConverter.Infrastructure.dll
+/Users/MAC/Desktop/Personal/CurrencyConverter/CurrencyConverter.Infrastructure/obj/Debug/net9.0/CurrencyConverter.Infrastructure.sourcelink.json

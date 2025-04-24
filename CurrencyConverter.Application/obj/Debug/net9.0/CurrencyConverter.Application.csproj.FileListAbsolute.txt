@@ -1,0 +1,16 @@
+/Users/MAC/Desktop/Personal/CurrencyConverter/CurrencyConverter.Application/bin/Debug/net9.0/CurrencyConverter.Application.deps.json
+/Users/MAC/Desktop/Personal/CurrencyConverter/CurrencyConverter.Application/bin/Debug/net9.0/CurrencyConverter.Application.dll
+/Users/MAC/Desktop/Personal/CurrencyConverter/CurrencyConverter.Application/bin/Debug/net9.0/CurrencyConverter.Application.pdb
+/Users/MAC/Desktop/Personal/CurrencyConverter/CurrencyConverter.Application/obj/Debug/net9.0/CurrencyConverter.Application.GeneratedMSBuildEditorConfig.editorconfig
+/Users/MAC/Desktop/Personal/CurrencyConverter/CurrencyConverter.Application/obj/Debug/net9.0/CurrencyConverter.Application.AssemblyInfoInputs.cache
+/Users/MAC/Desktop/Personal/CurrencyConverter/CurrencyConverter.Application/obj/Debug/net9.0/CurrencyConverter.Application.AssemblyInfo.cs
+/Users/MAC/Desktop/Personal/CurrencyConverter/CurrencyConverter.Application/obj/Debug/net9.0/CurrencyConverter.Application.csproj.CoreCompileInputs.cache
+/Users/MAC/Desktop/Personal/CurrencyConverter/CurrencyConverter.Application/obj/Debug/net9.0/CurrencyConverter.Application.dll
+/Users/MAC/Desktop/Personal/CurrencyConverter/CurrencyConverter.Application/obj/Debug/net9.0/refint/CurrencyConverter.Application.dll
+/Users/MAC/Desktop/Personal/CurrencyConverter/CurrencyConverter.Application/obj/Debug/net9.0/CurrencyConverter.Application.pdb
+/Users/MAC/Desktop/Personal/CurrencyConverter/CurrencyConverter.Application/obj/Debug/net9.0/ref/CurrencyConverter.Application.dll
+/Users/MAC/Desktop/Personal/CurrencyConverter/CurrencyConverter.Application/bin/Debug/net9.0/CurrencyConverter.Domain.dll
+/Users/MAC/Desktop/Personal/CurrencyConverter/CurrencyConverter.Application/bin/Debug/net9.0/CurrencyConverter.Domain.pdb
+/Users/MAC/Desktop/Personal/CurrencyConverter/CurrencyConverter.Application/obj/Debug/net9.0/CurrencyConverter.Application.csproj.AssemblyReference.cache
+/Users/MAC/Desktop/Personal/CurrencyConverter/CurrencyConverter.Application/obj/Debug/net9.0/CurrencyConverter.Application.sourcelink.json
+/Users/MAC/Desktop/Personal/CurrencyConverter/CurrencyConverter.Application/obj/Debug/net9.0/Currency.FC9E407D.Up2Date

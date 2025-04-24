@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "R/8QhyioYNc=",
+  "success": true,
+  "projectFilePath": "/Users/MAC/Desktop/Personal/CurrencyConverter1/CurrencyConverter.Domain/CurrencyConverter.Domain.csproj",
+  "expectedPackageFiles": [
+    "/Users/MAC/.nuget/packages/sonaranalyzer.csharp/10.8.0.113526/sonaranalyzer.csharp.10.8.0.113526.nupkg.sha512"
+  ],
+  "logs": []
+}

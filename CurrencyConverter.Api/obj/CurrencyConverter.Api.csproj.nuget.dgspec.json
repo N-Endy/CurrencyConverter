@@ -1,0 +1,472 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/MAC/Desktop/Personal/CurrencyConverter1/CurrencyConverter.Api/CurrencyConverter.Api.csproj": {}
+  },
+  "projects": {
+    "/Users/MAC/Desktop/Personal/CurrencyConverter1/CurrencyConverter.Api/CurrencyConverter.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/MAC/Desktop/Personal/CurrencyConverter1/CurrencyConverter.Api/CurrencyConverter.Api.csproj",
+        "projectName": "CurrencyConverter.Api",
+        "projectPath": "/Users/MAC/Desktop/Personal/CurrencyConverter1/CurrencyConverter.Api/CurrencyConverter.Api.csproj",
+        "packagesPath": "/Users/MAC/.nuget/packages/",
+        "outputPath": "/Users/MAC/Desktop/Personal/CurrencyConverter1/CurrencyConverter.Api/obj/",
+        "projectStyle": "PackageReference",
+        "centralPackageVersionsManagementEnabled": true,
+        "configFilePaths": [
+          "/Users/MAC/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/Users/MAC/Desktop/Personal/CurrencyConverter1/CurrencyConverter.Application/CurrencyConverter.Application.csproj": {
+                "projectPath": "/Users/MAC/Desktop/Personal/CurrencyConverter1/CurrencyConverter.Application/CurrencyConverter.Application.csproj"
+              },
+              "/Users/MAC/Desktop/Personal/CurrencyConverter1/CurrencyConverter.Infrastructure/CurrencyConverter.Infrastructure.csproj": {
+                "projectPath": "/Users/MAC/Desktop/Personal/CurrencyConverter1/CurrencyConverter.Infrastructure/CurrencyConverter.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "allWarningsAsErrors": true,
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Asp.Versioning.Mvc": {
+              "target": "Package",
+              "version": "[8.1.0, )",
+              "versionCentrallyManaged": true
+            },
+            "AspNetCoreRateLimit": {
+              "target": "Package",
+              "version": "[5.0.0, )",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[9.0.1, )",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[9.0.4, )",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.4, )",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.Extensions.Http.Polly": {
+              "target": "Package",
+              "version": "[10.0.0-preview.3.25172.1, )",
+              "versionCentrallyManaged": true
+            },
+            "Polly": {
+              "target": "Package",
+              "version": "[8.5.2, )",
+              "versionCentrallyManaged": true
+            },
+            "Serilog": {
+              "target": "Package",
+              "version": "[4.2.1-dev-02352, )",
+              "versionCentrallyManaged": true
+            },
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[9.0.0, )",
+              "versionCentrallyManaged": true
+            },
+            "Serilog.Settings.Configuration": {
+              "target": "Package",
+              "version": "[9.0.1-dev-02317, )",
+              "versionCentrallyManaged": true
+            },
+            "Serilog.Sinks.Console": {
+              "target": "Package",
+              "version": "[6.0.1-dev-00953, )",
+              "versionCentrallyManaged": true
+            },
+            "Serilog.Sinks.File": {
+              "target": "Package",
+              "version": "[7.0.0-dev-02301, )",
+              "versionCentrallyManaged": true
+            },
+            "SonarAnalyzer.CSharp": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[10.8.0.113526, )",
+              "versionCentrallyManaged": true
+            }
+          },
+          "centralPackageVersions": {
+            "Asp.Versioning.Mvc": "8.1.0",
+            "AspNetCoreRateLimit": "5.0.0",
+            "FluentValidation.AspNetCore": "11.3.0",
+            "Microsoft.AspNetCore.OpenApi": "9.0.1",
+            "Microsoft.EntityFrameworkCore": "9.0.4",
+            "Microsoft.EntityFrameworkCore.Relational": "9.0.4",
+            "Microsoft.EntityFrameworkCore.Sqlite": "9.0.4",
+            "Microsoft.EntityFrameworkCore.SqlServer": "9.0.4",
+            "Microsoft.EntityFrameworkCore.Tools": "9.0.4",
+            "Microsoft.Extensions.Http.Polly": "10.0.0-preview.3.25172.1",
+            "Polly": "8.5.2",
+            "Serilog": "4.2.1-dev-02352",
+            "Serilog.AspNetCore": "9.0.0",
+            "Serilog.Settings.Configuration": "9.0.1-dev-02317",
+            "Serilog.Sinks.Console": "6.0.1-dev-00953",
+            "Serilog.Sinks.File": "7.0.0-dev-02301",
+            "SonarAnalyzer.CSharp": "10.8.0.113526"
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.102/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/MAC/Desktop/Personal/CurrencyConverter1/CurrencyConverter.Application/CurrencyConverter.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/MAC/Desktop/Personal/CurrencyConverter1/CurrencyConverter.Application/CurrencyConverter.Application.csproj",
+        "projectName": "CurrencyConverter.Application",
+        "projectPath": "/Users/MAC/Desktop/Personal/CurrencyConverter1/CurrencyConverter.Application/CurrencyConverter.Application.csproj",
+        "packagesPath": "/Users/MAC/.nuget/packages/",
+        "outputPath": "/Users/MAC/Desktop/Personal/CurrencyConverter1/CurrencyConverter.Application/obj/",
+        "projectStyle": "PackageReference",
+        "centralPackageVersionsManagementEnabled": true,
+        "configFilePaths": [
+          "/Users/MAC/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/Users/MAC/Desktop/Personal/CurrencyConverter1/CurrencyConverter.Domain/CurrencyConverter.Domain.csproj": {
+                "projectPath": "/Users/MAC/Desktop/Personal/CurrencyConverter1/CurrencyConverter.Domain/CurrencyConverter.Domain.csproj"
+              },
+              "/Users/MAC/Desktop/Personal/CurrencyConverter1/CurrencyConverter.Infrastructure/CurrencyConverter.Infrastructure.csproj": {
+                "projectPath": "/Users/MAC/Desktop/Personal/CurrencyConverter1/CurrencyConverter.Infrastructure/CurrencyConverter.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "allWarningsAsErrors": true,
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.3.0, )",
+              "versionCentrallyManaged": true
+            },
+            "Polly": {
+              "target": "Package",
+              "version": "[8.5.2, )",
+              "versionCentrallyManaged": true
+            },
+            "Serilog": {
+              "target": "Package",
+              "version": "[4.2.1-dev-02352, )",
+              "versionCentrallyManaged": true
+            },
+            "SonarAnalyzer.CSharp": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[10.8.0.113526, )",
+              "versionCentrallyManaged": true
+            }
+          },
+          "centralPackageVersions": {
+            "Asp.Versioning.Mvc": "8.1.0",
+            "AspNetCoreRateLimit": "5.0.0",
+            "FluentValidation.AspNetCore": "11.3.0",
+            "Microsoft.AspNetCore.OpenApi": "9.0.1",
+            "Microsoft.EntityFrameworkCore": "9.0.4",
+            "Microsoft.EntityFrameworkCore.Relational": "9.0.4",
+            "Microsoft.EntityFrameworkCore.Sqlite": "9.0.4",
+            "Microsoft.EntityFrameworkCore.SqlServer": "9.0.4",
+            "Microsoft.EntityFrameworkCore.Tools": "9.0.4",
+            "Microsoft.Extensions.Http.Polly": "10.0.0-preview.3.25172.1",
+            "Polly": "8.5.2",
+            "Serilog": "4.2.1-dev-02352",
+            "Serilog.AspNetCore": "9.0.0",
+            "Serilog.Settings.Configuration": "9.0.1-dev-02317",
+            "Serilog.Sinks.Console": "6.0.1-dev-00953",
+            "Serilog.Sinks.File": "7.0.0-dev-02301",
+            "SonarAnalyzer.CSharp": "10.8.0.113526"
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.102/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/MAC/Desktop/Personal/CurrencyConverter1/CurrencyConverter.Domain/CurrencyConverter.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/MAC/Desktop/Personal/CurrencyConverter1/CurrencyConverter.Domain/CurrencyConverter.Domain.csproj",
+        "projectName": "CurrencyConverter.Domain",
+        "projectPath": "/Users/MAC/Desktop/Personal/CurrencyConverter1/CurrencyConverter.Domain/CurrencyConverter.Domain.csproj",
+        "packagesPath": "/Users/MAC/.nuget/packages/",
+        "outputPath": "/Users/MAC/Desktop/Personal/CurrencyConverter1/CurrencyConverter.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "centralPackageVersionsManagementEnabled": true,
+        "configFilePaths": [
+          "/Users/MAC/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "allWarningsAsErrors": true,
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "SonarAnalyzer.CSharp": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[10.8.0.113526, )",
+              "versionCentrallyManaged": true
+            }
+          },
+          "centralPackageVersions": {
+            "Asp.Versioning.Mvc": "8.1.0",
+            "AspNetCoreRateLimit": "5.0.0",
+            "FluentValidation.AspNetCore": "11.3.0",
+            "Microsoft.AspNetCore.OpenApi": "9.0.1",
+            "Microsoft.EntityFrameworkCore": "9.0.4",
+            "Microsoft.EntityFrameworkCore.Relational": "9.0.4",
+            "Microsoft.EntityFrameworkCore.Sqlite": "9.0.4",
+            "Microsoft.EntityFrameworkCore.SqlServer": "9.0.4",
+            "Microsoft.EntityFrameworkCore.Tools": "9.0.4",
+            "Microsoft.Extensions.Http.Polly": "10.0.0-preview.3.25172.1",
+            "Polly": "8.5.2",
+            "Serilog": "4.2.1-dev-02352",
+            "Serilog.AspNetCore": "9.0.0",
+            "Serilog.Settings.Configuration": "9.0.1-dev-02317",
+            "Serilog.Sinks.Console": "6.0.1-dev-00953",
+            "Serilog.Sinks.File": "7.0.0-dev-02301",
+            "SonarAnalyzer.CSharp": "10.8.0.113526"
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.102/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/MAC/Desktop/Personal/CurrencyConverter1/CurrencyConverter.Infrastructure/CurrencyConverter.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/MAC/Desktop/Personal/CurrencyConverter1/CurrencyConverter.Infrastructure/CurrencyConverter.Infrastructure.csproj",
+        "projectName": "CurrencyConverter.Infrastructure",
+        "projectPath": "/Users/MAC/Desktop/Personal/CurrencyConverter1/CurrencyConverter.Infrastructure/CurrencyConverter.Infrastructure.csproj",
+        "packagesPath": "/Users/MAC/.nuget/packages/",
+        "outputPath": "/Users/MAC/Desktop/Personal/CurrencyConverter1/CurrencyConverter.Infrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "centralPackageVersionsManagementEnabled": true,
+        "configFilePaths": [
+          "/Users/MAC/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/Users/MAC/Desktop/Personal/CurrencyConverter1/CurrencyConverter.Domain/CurrencyConverter.Domain.csproj": {
+                "projectPath": "/Users/MAC/Desktop/Personal/CurrencyConverter1/CurrencyConverter.Domain/CurrencyConverter.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "allWarningsAsErrors": true,
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.4, )",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[9.0.4, )",
+              "versionCentrallyManaged": true
+            },
+            "SonarAnalyzer.CSharp": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[10.8.0.113526, )",
+              "versionCentrallyManaged": true
+            }
+          },
+          "centralPackageVersions": {
+            "Asp.Versioning.Mvc": "8.1.0",
+            "AspNetCoreRateLimit": "5.0.0",
+            "FluentValidation.AspNetCore": "11.3.0",
+            "Microsoft.AspNetCore.OpenApi": "9.0.1",
+            "Microsoft.EntityFrameworkCore": "9.0.4",
+            "Microsoft.EntityFrameworkCore.Relational": "9.0.4",
+            "Microsoft.EntityFrameworkCore.Sqlite": "9.0.4",
+            "Microsoft.EntityFrameworkCore.SqlServer": "9.0.4",
+            "Microsoft.EntityFrameworkCore.Tools": "9.0.4",
+            "Microsoft.Extensions.Http.Polly": "10.0.0-preview.3.25172.1",
+            "Polly": "8.5.2",
+            "Serilog": "4.2.1-dev-02352",
+            "Serilog.AspNetCore": "9.0.0",
+            "Serilog.Settings.Configuration": "9.0.1-dev-02317",
+            "Serilog.Sinks.Console": "6.0.1-dev-00953",
+            "Serilog.Sinks.File": "7.0.0-dev-02301",
+            "SonarAnalyzer.CSharp": "10.8.0.113526"
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.102/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

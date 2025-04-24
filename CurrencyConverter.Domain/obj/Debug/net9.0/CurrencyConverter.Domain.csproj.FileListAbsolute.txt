@@ -1,0 +1,12 @@
+/Users/MAC/Desktop/Personal/CurrencyConverter/CurrencyConverter.Domain/bin/Debug/net9.0/CurrencyConverter.Domain.deps.json
+/Users/MAC/Desktop/Personal/CurrencyConverter/CurrencyConverter.Domain/bin/Debug/net9.0/CurrencyConverter.Domain.dll
+/Users/MAC/Desktop/Personal/CurrencyConverter/CurrencyConverter.Domain/bin/Debug/net9.0/CurrencyConverter.Domain.pdb
+/Users/MAC/Desktop/Personal/CurrencyConverter/CurrencyConverter.Domain/obj/Debug/net9.0/CurrencyConverter.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/MAC/Desktop/Personal/CurrencyConverter/CurrencyConverter.Domain/obj/Debug/net9.0/CurrencyConverter.Domain.AssemblyInfoInputs.cache
+/Users/MAC/Desktop/Personal/CurrencyConverter/CurrencyConverter.Domain/obj/Debug/net9.0/CurrencyConverter.Domain.AssemblyInfo.cs
+/Users/MAC/Desktop/Personal/CurrencyConverter/CurrencyConverter.Domain/obj/Debug/net9.0/CurrencyConverter.Domain.csproj.CoreCompileInputs.cache
+/Users/MAC/Desktop/Personal/CurrencyConverter/CurrencyConverter.Domain/obj/Debug/net9.0/CurrencyConverter.Domain.dll
+/Users/MAC/Desktop/Personal/CurrencyConverter/CurrencyConverter.Domain/obj/Debug/net9.0/refint/CurrencyConverter.Domain.dll
+/Users/MAC/Desktop/Personal/CurrencyConverter/CurrencyConverter.Domain/obj/Debug/net9.0/CurrencyConverter.Domain.pdb
+/Users/MAC/Desktop/Personal/CurrencyConverter/CurrencyConverter.Domain/obj/Debug/net9.0/ref/CurrencyConverter.Domain.dll
+/Users/MAC/Desktop/Personal/CurrencyConverter/CurrencyConverter.Domain/obj/Debug/net9.0/CurrencyConverter.Domain.sourcelink.json
