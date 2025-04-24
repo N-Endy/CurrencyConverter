@@ -1,5 +1,6 @@
 using Asp.Versioning;
 using CurrencyConverter.Application.CurrencyService.Interface;
+using CurrencyConverter.Domain.Exceptions;
 using CurrencyConverter.Domain.Models.Requests;
 using CurrencyConverter.Domain.Models.Responses;
 using Microsoft.AspNetCore.Mvc;
@@ -23,12 +24,12 @@ public class CurrencyController : ControllerBase
     {
         if (string.IsNullOrEmpty(request.FromCurrency) || string.IsNullOrEmpty(request.ToCurrency))
         {
-            return BadRequest("FromCurrency and ToCurrency are required.");
+            throw new ValidationException("FromCurrency and ToCurrency are required.");
         }
 
         if (request.Amount <= 0)
         {
-            return BadRequest("Amount must be greater than zero.");
+            throw new ValidationException("Amount must be greater than zero.");
         }
 
         try
@@ -48,17 +49,17 @@ public class CurrencyController : ControllerBase
     {
         if (string.IsNullOrEmpty(request.FromCurrency) || string.IsNullOrEmpty(request.ToCurrency))
         {
-            return BadRequest("FromCurrency and ToCurrency are required.");
+            throw new NotFoundException("FromCurrency and ToCurrency are required.");
         }
 
         if (request.Amount <= 0)
         {
-            return BadRequest("Amount must be greater than zero.");
+            throw new NotFoundException("Amount must be greater than zero.");
         }
 
         if (startDate >= endDate)
         {
-            return BadRequest("Start date must be earlier than end date.");
+            throw new NotFoundException("Start date must be earlier than end date.");
         }
 
         try
@@ -78,12 +79,12 @@ public class CurrencyController : ControllerBase
     {
         if (string.IsNullOrEmpty(request.FromCurrency) || string.IsNullOrEmpty(request.ToCurrency))
         {
-            return BadRequest("FromCurrency and ToCurrency are required.");
+            throw new NotFoundException("FromCurrency and ToCurrency are required.");
         }
 
         if (request.Amount <= 0)
         {
-            return BadRequest("Amount must be greater than zero.");
+            throw new NotFoundException("Amount must be greater than zero.");
         }
 
         try

@@ -5,6 +5,10 @@ namespace CurrencyConverter.Api.Middlewares;
 
 public static class ServiceExtension
 {
-    public static void ConfigureLoggerService(this IServiceCollection services) =>
+    public static IServiceCollection ConfigureLoggerService(this IServiceCollection services)
+    {
         services.AddSingleton<ILoggerManager, LoggerManager>();
+        return services;
+    }
+
 }
