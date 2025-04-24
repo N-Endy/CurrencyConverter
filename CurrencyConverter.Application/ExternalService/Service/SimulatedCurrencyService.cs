@@ -1,6 +1,7 @@
 using System.Globalization;
 using CurrencyConverter.Application.ExternalService.Interface;
 using CurrencyConverter.Application.Logger.Interface;
+using CurrencyConverter.Domain.Exceptions;
 using CurrencyConverter.Domain.Models.Responses;
 
 namespace CurrencyConverter.Application.ExternalService.Service;
@@ -21,7 +22,7 @@ public class SimulatedCurrencyService : IExternalCurrencyService
         if (_callCount % 5 == 0)
         {
             Logger1.LogWarn("Simulated rate limit exceeded for real-time rates.");
-            throw new HttpRequestException("Rate limit exceeded (simulated).");
+            throw new ExternalServiceException("Rate limit exceeded for real-time rates.");
         }
         var response = new RealTimeResponse
         {
@@ -45,7 +46,7 @@ public class SimulatedCurrencyService : IExternalCurrencyService
         if (_callCount % 5 == 0)
         {
             Logger1.LogWarn("Simulated rate limit exceeded for historical rates.");
-            throw new HttpRequestException("Rate limit exceeded (simulated).");
+            throw new ExternalServiceException("Rate limit exceeded for historical rates.");
         }
         
         var rates = new Dictionary<string, decimal>();

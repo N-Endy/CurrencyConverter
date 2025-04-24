@@ -1,5 +1,6 @@
 using CurrencyConverter.Application.CurrencyService.Interface;
 using CurrencyConverter.Domain.Entities;
+using CurrencyConverter.Domain.Exceptions;
 using CurrencyConverter.Domain.Models.Requests;
 using CurrencyConverter.Domain.Models.Responses;
 using CurrencyConverter.Infrastructure.Repository.Interface;
@@ -17,10 +18,20 @@ public class CurrencyService : ICurrencyService
 
     public async Task<CurrencyConversionResponse> ConvertCurrencyAsync(CurrencyConversionRequest request)
     {
+        if (string.IsNullOrEmpty(request.FromCurrency) || string.IsNullOrEmpty(request.ToCurrency))
+        {
+            throw new ValidationException("FromCurrency and ToCurrency are required.");
+        }
+
+        if (request.Amount <= 0)
+        {
+            throw new ValidationException("Amount must be greater than zero.");
+        }
+        
         ExchangeRate? rate = await CurrencyRepository.GetLatestExchangeRateAsync(request);
         if (rate == null)
         {
-            throw new Exception("Exchange rate not found.");
+            throw new NotFoundException("Exchange rate not found.");
         }
 
         decimal convertedAmount = request.Amount * rate.Rate;
@@ -38,10 +49,20 @@ public class CurrencyService : ICurrencyService
 
     public async Task<CurrencyConversionResponse> HistoricalConvertAsync(CurrencyConversionRequest request)
     {
+        if (string.IsNullOrEmpty(request.FromCurrency) || string.IsNullOrEmpty(request.ToCurrency))
+        {
+            throw new NotFoundException("FromCurrency and ToCurrency are required.");
+        }
+
+        if (request.Amount <= 0)
+        {
+            throw new NotFoundException("Amount must be greater than zero.");
+        }
+        
         ExchangeRate? rate = await CurrencyRepository.GetHistoricalExchangeRateAsync(request);
         if (rate == null)
         {
-            throw new Exception("Historical exchange rate not found.");
+            throw new NotFoundException("Historical exchange rate not found.");
         }
 
         decimal convertedAmount = request.Amount * rate.Rate;
@@ -59,10 +80,25 @@ public class CurrencyService : ICurrencyService
     
     public async Task<List<CurrencyConversionResponse>> GetHistoricalRatesAsync(CurrencyConversionRequest request, DateTime startDate, DateTime endDate)
     {
+        if (string.IsNullOrEmpty(request.FromCurrency) || string.IsNullOrEmpty(request.ToCurrency))
+        {
+            throw new NotFoundException("FromCurrency and ToCurrency are required.");
+        }
+
+        if (request.Amount <= 0)
+        {
+            throw new NotFoundException("Amount must be greater than zero.");
+        }
+
+        if (startDate >= endDate)
+        {
+            throw new NotFoundException("Start date must be earlier than end date.");
+        }
+        
         var rates = (List<ExchangeRate>) await CurrencyRepository.GetAllHistoricalExchangeRatesAsync(request, startDate, endDate);
         if (rates == null || !rates.Any())
         {
-            throw new Exception("No historical exchange rates found.");
+            throw new NotFoundException("No historical exchange rates found.");
         }
 
         var responses = new List<CurrencyConversionResponse>();

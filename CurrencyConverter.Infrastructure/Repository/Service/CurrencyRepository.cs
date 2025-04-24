@@ -18,6 +18,7 @@ public class CurrencyRepository : ICurrencyRepository
     public async Task<ExchangeRate> GetLatestExchangeRateAsync(CurrencyConversionRequest request)
     {
         ExchangeRate? rate = await DbContext.ExchangeRates
+            .AsNoTracking()
             .Where(r => r.BaseCurrency == request.FromCurrency && r.TargetCurrency == request.ToCurrency)
             .OrderByDescending(r => r.CreatedAt)
             .FirstOrDefaultAsync();
